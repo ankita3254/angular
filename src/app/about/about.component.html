@@ -1,0 +1,30 @@
+<h1> ABOUT ME</h1>
+       <div id="about" fxLayout="row" fxLayoutAlign="space-between center" >
+            
+            <div ><img src="https://img.freepik.com/free-vector/maths-online-course-economics-university-department-internet-classes-accounting-lessons-bookkeeping-mathematics-textbooks-digital-archive_335657-3441.jpg?w=2000"></div>
+            <div id="skill"><h2>SKILLS</h2>
+               <span>C,C++,javascript,nodejs,expreejs<br>,Mongodb,CSS,HTML,SQL,Github</span>
+               <h2>HOBBIES</h2>
+               <span>Photography,gardening,gaming,<br>calligraphy,coding</span>
+                <h2>ACHIEVEMENTS</h2>
+                <span> <li>2 star in problem solving on hackerrank</li>
+                    <li> Certificate of participation in Codeplay</li>
+                </span>
+                <a routerLink="me">College Description</a>
+            </div>
+       </div>
+       <section>
+
+        <form #form="ngForm" (ngSubmit)="onSub(form.value)">
+          <mat-form-field appearance="outline">
+            <mat-label>ID</mat-label>
+            <input matInput placeholder="ID" #id name="id" ngModel>
+          </mat-form-field>
+          
+          <div>
+            <button mat-raised-button color="accent">Delete
+            </button>
+          </div>
+        </form>
+      </section>
+      

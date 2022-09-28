@@ -1,0 +1,61 @@
+
+<!-- <section id="name">
+    <h1>Register</h1>
+<form class="example-form" (ngSubmit)="opendialog()">
+    <mat-form-field class="example-full-width" appearance="outline"  >
+      <mat-label>First Name</mat-label>
+      <input type="text" name="firstname" #firstname [(ngModel)]="newRequest.firstname"
+             placeholder="Pick one"
+             aria-label="First Name"
+             matInput
+             [formControl]="myControl"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of options" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  <p>
+  <mat-form-field appearance="outline" >
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="Last Name" #lastname name="lastname" [(ngModel)]="newRequest.lastname">
+  </mat-form-field>
+  </p>
+  
+   <p>
+  <mat-form-field appearance="outline">
+    <mat-label>Age</mat-label>
+    <input matInput placeholder="Age" #age name="age" [(ngModel)]="newRequest.age">
+  </mat-form-field>
+</p>
+
+  
+  <p>
+    <button mat-raised-button color="accent">Submit
+    </button>
+  </p>
+   </form> 
+</section> -->
+
+
+
+<section>
+
+  <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" #name name="name" ngModel>
+    </mat-form-field>
+    <br><br>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" #password name="password" ngModel>
+    </mat-form-field>
+    <br><br>
+    <div>
+      <button mat-raised-button color="accent">Add user
+      </button>
+    </div>
+  </form>
+</section>

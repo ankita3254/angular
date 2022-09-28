@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+.n{
+    padding: 1%;
+}
+.n {
+    border-radius: 6px;
+}
+#contact{
+    margin-top: 4%;
+}    
+ #contact form{
+    margin-left: 41%;
+    margin-top: 5%;
+ }
+ /* .linkss{ */
+    /* display:flex;
+    justify-content:center; */
+    
+    .linkss img{
+    width: 69%;
+    height: 50px;
+    }
+    .footer{
+        text-align: center;
+        padding: 5%;
+        }
+
+        @media screen and (max-width:600px) {
+            #contact form{
+               margin-left: 15%;
+            }
+           
+        }
+        @media screen and (max-width:400px) {
+            #contact form{
+             margin-left: 12%;
+            }
+         }

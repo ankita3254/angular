@@ -1,0 +1,53 @@
+#about img{
+    width: 45%;
+    /* flex-wrap: wrap; */
+  }
+  span{
+      font-size: 18px;
+  }
+  #about p{
+    margin-top: 12%;
+    padding-left: 2%;
+}
+#about{
+    margin-top: 90px;
+    /* display: flex; */
+}
+#skill{
+  margin-right: 15%;
+}
+h1{
+    text-align: center;
+    margin-top: 4%;
+}
+
+#skill{
+  padding-left: 10%;
+}
+@media screen and (max-width:600px) {
+  #about span{
+     flex-wrap: wrap;
+     font-size: 15px;
+     flex-direction: column;
+  }
+ 
+}
+@media screen and (max-width:600px) {
+  #about img{
+     width: 87%;
+     height: 250px;
+     flex-wrap: wrap;
+  }
+ 
+}
+@media screen and (max-width:600px) {
+  #about{
+      flex-direction: column;
+      padding: 10%;
+  }
+}
+
+section{
+  text-align: center;
+  margin-top: 1%;
+}
